@@ -7,7 +7,7 @@ const boardingRef = ref(boarding);
 
 <template>
 	<main class="min-h-screen flex flex-col text-center items-center">
-		<img :src="boardingRef" alt="boarding" width="300" class="pt-12" />
+		<img :src="boardingRef" alt="boarding" width="300" class="h-auto max-w-full" />
 		<h1 class="text-[18px] font-bold text-text-black-1">Apps Kurir</h1>
 		<h2 class="text-text-grey-1 font-normal text-xs w-1/2">
 			Siapkan strategi khusus untuk mengatasi keluhan pelanggan.

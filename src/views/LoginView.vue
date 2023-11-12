@@ -1,9 +1,5 @@
 <script setup>
-import { ref } from "vue";
 import eyesPassword from "../assets/Frameeyes.png";
-import illustration from "../assets/illustration.png";
-const illustrationRef = ref(illustration);
-const eyesPasswordRef = ref(eyesPassword);
 </script>
 
 <template>
@@ -39,7 +35,9 @@ const eyesPasswordRef = ref(eyesPassword);
 				</RouterLink>
 			</form>
 			<RouterLink class="w-full pt-4" :to="'/homepage'">
-				<button class="bg-red-button-1 py-3 w-full text-white rounded-xl">
+				<button
+					class="bg-red-button-1 font-google-sans text-sm font-medium py-3 w-full text-white rounded-xl"
+				>
 					Masuk
 				</button>
 			</RouterLink>
