@@ -7,6 +7,7 @@ import ForgotPasswordView from "../views/ForgotPasswordView.vue";
 import NewPasswordView from "../views/NewPasswordView.vue";
 import NewPasswordFormView from "../views/NewPasswordFormView.vue";
 import NewPasswordSuccessVue from "../views/NewPasswordSuccessVue.vue";
+import UserView from '../views/UserView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +21,18 @@ const router = createRouter({
 			path: "/boarding",
 			name: "boarding",
 			component: BoardingView,
+		},
+		{
+			path: '/user',
+			name: 'user',
+			component: UserView,
+			children: [
+				{
+					path: 'dashboard',
+					name: 'dashboard',
+					component: HomePageView
+				}
+			]
 		},
 		{
 			path: "/login",

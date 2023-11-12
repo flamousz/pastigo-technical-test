@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import photoProfileHomepage from "../assets/photo-profile-homepage.png";
 import carHomepage from "../assets/car-homepage.png";
+import locationIcon from '../assets/location-icon.png'
 
 const isChecked = ref(false);
 const isSwitch = ref("OFF");
@@ -18,7 +19,7 @@ const handleChecked = () => {
 <template>
 	<main class="flex flex-col items-center max-w-lg">
 		<div
-			class="bg-[url('../assets/header-dashboard.png')] px-3 flex flex-col gap-2 items-center bg-contain min-w-full min-h-screen bg-no-repeat"
+			class="bg-[url('../assets/header-dashboard.png')] px-3 flex flex-col gap-4 items-center bg-contain min-w-full min-h-screen bg-no-repeat relative"
 		>
 			<div class="text-center pt-12">
 				<h3 class="font-google-sans text-xs font-normal text-white">
@@ -150,6 +151,72 @@ const handleChecked = () => {
 						<h1 class="font-poppins font-medium text-xs text-black">
 							1 pickup
 						</h1>
+					</div>
+				</div>
+			</div>
+			<div class="min-w-full mt-2 flex flex-col gap-2 mb-3">
+				<div class="flex flex-row justify-between">
+					<h1 class="font-poppins font-md text-sm">Pending</h1>
+					<h1 class="font-poppins font-md text-sm text-red-button-1">
+						Lihat Semua
+					</h1>
+				</div>
+				<div
+					class="flex flex-col p-4 shadow-[0_3px_10px_rgb(0,0,0,0.1)] bg-white rounded-xl"
+				>
+					<div class="flex flex-row justify-between">
+						<div class="flex flex-row gap-2">
+							<img :src="carHomepage" alt="car icon" class="h-8 w-8" />
+							<div>
+								<h1
+									class="font-poppins font-medium text-xs text-text-black-1"
+								>
+									#1234566788
+								</h1>
+								<h1
+									class="font-poppins font-normal text-xs text-text-grey-1"
+								>
+									10 Sep 2021
+								</h1>
+							</div>
+						</div>
+						<h1
+							class="bg-bg-status-pending h-fit px-2 font-poppins font-normal text-[10px] text-text-status-pending rounded-md"
+						>
+							Pending
+						</h1>
+					</div>
+					<hr class="border-[1px] mt-3 mb-2" />
+					<div class="flex flex-row  justify-between mb-2">
+						<div class="flex flex-row justify-between w-[45%] ">
+							<div >
+								<div class="font-poppins font-normal text-xs text-text-grey-1">Berat</div>
+								<div class="font-poppins font-normal text-xs text-text-black-success-password-header" >32 Kg</div>
+							</div>
+							<div>
+								<div class="font-poppins font-normal text-xs text-text-grey-1">Total Paket</div>
+								<div class="font-poppins font-normal text-xs text-text-black-success-password-header">50</div>
+							</div>
+						</div>
+						<div class="w-1/2">
+							<div>
+								<div class="font-poppins font-normal text-xs text-text-grey-1 text-right">Estimasi</div>
+								<div class="font-poppins font-normal text-xs text-text-black-success-password-header text-right">10 Sep 2021, 20:20 WIB</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-row bg-bg-orange-warning p-2 rounded-xl gap-[6px]">
+						<div>
+							<img :src=locationIcon alt="location icon" class="h-auto min-w-fit">
+						</div>
+						<div class="flex flex-col gap-2" >
+							<p class="font-poppins font-medium text-xs text-text-black-success-password-header">
+								Kost
+							</p>
+							<p class="font-poppins font-normal text-[11.1px] text-text-grey-1">
+								Jl. Ampera Raya No. 133, RT.05/RW.10, Ragunan, Kec. Ps. Minggu, Kota Jakarta....
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

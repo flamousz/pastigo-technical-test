@@ -11,10 +11,13 @@ module.exports = {
         'text-black-success-password-h1': '#333333',
         'text-grey-1': '#667085',
         'text-switch': '#646E83',
+        'text-status-pending': '#F59F00',
         'bg-grey-1': '#F2F4F7',
         'bg-grey-cool': '#7B8CAD',
+        'bg-orange-warning': '#FFFAEB',
         'text-grey-pp-homepage-1': '#475467',
-        'gradient-switch-end': '#E8EAEA'
+        'gradient-switch-end': '#E8EAEA',
+        'bg-status-pending': '#FFF9DB'
       }
     },
     fontFamily: {
