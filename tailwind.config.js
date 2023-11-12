@@ -10,7 +10,11 @@ module.exports = {
         'text-black-success-password-header': '#101828',
         'text-black-success-password-h1': '#333333',
         'text-grey-1': '#667085',
+        'text-switch': '#646E83',
         'bg-grey-1': '#F2F4F7',
+        'bg-grey-cool': '#7B8CAD',
+        'text-grey-pp-homepage-1': '#475467',
+        'gradient-switch-end': '#E8EAEA'
       }
     },
     fontFamily: {
