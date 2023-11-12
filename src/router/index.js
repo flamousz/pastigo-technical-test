@@ -8,6 +8,7 @@ import NewPasswordView from "../views/NewPasswordView.vue";
 import NewPasswordFormView from "../views/NewPasswordFormView.vue";
 import NewPasswordSuccessVue from "../views/NewPasswordSuccessVue.vue";
 import UserView from '../views/UserView.vue'
+import AccountView from '../views/AccountView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,11 @@ const router = createRouter({
 					path: 'dashboard',
 					name: 'dashboard',
 					component: HomePageView
+				},
+				{
+					path: 'account',
+					name: 'account',
+					component: AccountView
 				}
 			]
 		},

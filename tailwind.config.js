@@ -10,6 +10,7 @@ module.exports = {
         'text-black-success-password-header': '#101828',
         'text-black-success-password-h1': '#333333',
         'text-grey-1': '#667085',
+        'text-footer-grey': '#A0A4A8',
         'text-switch': '#646E83',
         'text-status-pending': '#F59F00',
         'bg-grey-1': '#F2F4F7',
