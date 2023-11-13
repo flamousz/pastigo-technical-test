@@ -9,6 +9,9 @@ import NewPasswordFormView from "../views/NewPasswordFormView.vue";
 import NewPasswordSuccessVue from "../views/NewPasswordSuccessVue.vue";
 import UserView from '../views/UserView.vue'
 import AccountView from '../views/AccountView.vue'
+import NearbyView from '../views/NearbyView.vue'
+import CourierView from '../views/CourierView.vue'
+import NotificationView from '../views/NotificationView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +40,21 @@ const router = createRouter({
 					path: 'account',
 					name: 'account',
 					component: AccountView
+				},
+				{
+					path: 'nearby',
+					name: 'nearby',
+					component: NearbyView
+				},
+				{
+					path: 'courier',
+					name: 'courier',
+					component: CourierView
+				},
+				{
+					path: 'notification',
+					name: 'notification',
+					component: NotificationView
 				}
 			]
 		},
