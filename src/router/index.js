@@ -17,6 +17,8 @@ import PendingView from "../views/PendingView.vue";
 import ProgressView from "../views/ProgressView.vue";
 import SuccessView from "../views/SuccessView.vue";
 import TroubleView from "../views/TroubleView.vue";
+import ChangePasswordVIew from "../views/ChangePasswordVIew.vue";
+import ChangeProfile from "../views/ChangeProfile.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +32,16 @@ const router = createRouter({
 			path: "/boarding",
 			name: "boarding",
 			component: BoardingView,
+		},
+		{
+			path: "/resetpassword",
+			name: "resetpassword",
+			component: ChangePasswordVIew,
+		},
+		{
+			path: "/changeprofile",
+			name: "changeprofile",
+			component: ChangeProfile,
 		},
 		{
 			path: "/user",

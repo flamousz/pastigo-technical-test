@@ -6,7 +6,8 @@ import FooterComponent from '../components/FooterComponent.vue';
 
 
 <template>
-    <main class="relative">
+    <main class="relative mx-auto">
+        
         <router-view></router-view>
         <FooterComponent/>
     </main>

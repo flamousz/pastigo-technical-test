@@ -14,8 +14,8 @@ const props = defineProps({
 const arrowBackRef = ref(arrowBack);
 
 const goBack = () => {
+	props.headerName === 'Pickup' ? route.push('/user/dashboard') : route.go(-1);
 	
-	route.go(-1);
 };
 </script>
 

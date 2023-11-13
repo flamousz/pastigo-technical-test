@@ -19,7 +19,7 @@ const handleChecked = () => {
 <template>
 	<main class="flex flex-col items-center max-w-lg">
 		<div
-			class="bg-[url('../assets/header-dashboard.png')] px-3 flex flex-col gap-4 items-center bg-contain min-w-full min-h-screen bg-no-repeat relative"
+			class="bg-[url('../assets/header-dashboard.png')] px-3 flex flex-col gap-4 items-center bg-contain min-w-full min-h-[calc(100vh-55px)] bg-no-repeat "
 		>
 			<div class="text-center pt-12">
 				<h3 class="font-google-sans text-xs font-normal text-white">
