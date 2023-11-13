@@ -34,7 +34,7 @@ import eyesPassword from "../assets/Frameeyes.png";
 					Lupa Password?
 				</RouterLink>
 			</form>
-			<RouterLink class="w-full pt-4" :to="'/homepage'">
+			<RouterLink class="w-full pt-4" :to="'/user/dashboard'">
 				<button
 					class="bg-red-button-1 font-google-sans text-sm font-medium py-3 w-full text-white rounded-xl"
 				>

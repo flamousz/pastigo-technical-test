@@ -10,10 +10,9 @@ const logoExpressRef = ref(logoExpress);
 <template>
 	<main class="min-h-screen grid place-content-center">
 		<img
-			class="grid place-content-center"
+			class="grid place-content-center h-auto min-w-fit"
 			:src="logoExpress"
 			alt="logo express"
-			width="99"
 		/>
 	</main>
 </template>

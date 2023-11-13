@@ -30,7 +30,7 @@ const handleChecked = () => {
 				</h2>
 			</div>
 			<div
-				class="flex flex-row rounded-lg min-w-full p-4 justify-between bg-white drop-shadow-md"
+				class="flex flex-row rounded-lg min-w-full p-4 -mt-2 justify-between bg-white drop-shadow-md"
 			>
 				<div class="flex flex-row gap-2 justify-between items-center">
 					<div>
