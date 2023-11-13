@@ -35,7 +35,7 @@ const tabImageNotification = getTabImage("notification", notificationActive, not
 
 <template>
 	<footer
-		class="max-w-[500px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white sticky bottom-0 flex flex-row px-3 py-1 justify-between"
+		class="max-w-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white sticky bottom-0 flex flex-row px-3 py-1 justify-between"
 	>
 		<RouterLink :to="'/user/dashboard'" class="flex flex-col items-center">
 			<img

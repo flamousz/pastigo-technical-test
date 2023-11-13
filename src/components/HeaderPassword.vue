@@ -6,7 +6,7 @@ import { useRouter } from "vue-router";
 const route = useRouter();
 
 const props = defineProps({
-	headerName: {
+	headerName: {	
 		type: String,
 	},
 });

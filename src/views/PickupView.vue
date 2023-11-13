@@ -10,7 +10,7 @@ const handleSelectedBorder = (routeName) => {
 </script>
 
 <template>
-	<main class="min-h-screen flex flex-col gap-5 relative">
+	<main class="min-h-screen flex flex-col gap-5 max-w-xl mx-auto relative">
 		<div class="flex flex-col gap-5 sticky bg-white top-0">
 			<HeaderPassword :headerName="'Pickup'" class="px-3" />
 

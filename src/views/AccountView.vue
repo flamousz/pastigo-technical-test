@@ -25,7 +25,7 @@ const handleModal = () => {
 
 <template>
 	<main
-		class="bg-[url('../assets/header-account.png')] min-h-[calc(100vh-55px)] max-w-lg mx-auto bg-contain bg-no-repeat"
+		class="bg-[url('../assets/header-account.png')] min-h-[calc(100vh-55px)] max-w-xl mx-auto bg-contain bg-no-repeat"
 	>
 		<Modal :isModal="isModal" @handleModal="handleModal" />
 

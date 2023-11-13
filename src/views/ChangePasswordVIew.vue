@@ -23,7 +23,7 @@ watch(
 </script>
 
 <template>
-	<div class="flex flex-col gap-3 px-4">
+	<div class="flex flex-col gap-3 px-4 max-w-xl mx-auto">
 		<HeaderPassword :headerName="'Ubah Kata Sandi'" />
 		<form
 			class="w-full flex flex-col gap-8 text-text-black-success-password-header"

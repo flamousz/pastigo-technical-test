@@ -18,7 +18,7 @@ const verificationChecker = () => {
 	isVerification.value = !isVerification.value;
 };
 
-const countDown = ref(3);
+const countDown = ref(30);
 
 const updateCountdown = () => {
 	if (countDown.value > 0) {
@@ -42,7 +42,7 @@ watch(
 </script>
 
 <template>
-	<main class="h-screen px-3 flex flex-col gap-5">
+	<main class="h-screen px-3 flex flex-col gap-5 max-w-xl mx-auto">
 		<HeaderPassword :headerName="'Lupa Kata Sandi'" />
 		<div v-if="!doneEmail" class="flex flex-col gap-3">
 			<h1 class="text-base font-medium font-roboto">

@@ -19,7 +19,7 @@ const dataProfile = ref({
 </script>
 
 <template>
-	<div class="flex flex-col gap-3 px-4 relative">
+	<div class="flex flex-col gap-3 px-4 relative max-w-xl mx-auto">
 		<HeaderPassword
 			:headerName="'Ubah Profil'"
 			class="sticky top-0 z-50 bg-white"

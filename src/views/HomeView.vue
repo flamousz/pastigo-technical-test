@@ -1,9 +1,15 @@
 <script setup>
-import { ref } from "vue";
-
+import { onMounted } from "vue";
 import logoExpress from "../assets/Frame-8543.png";
+import { useRouter } from "vue-router";
 
-const logoExpressRef = ref(logoExpress);
+const route = useRouter()
+
+onMounted(() => {
+	setTimeout(() => {
+		route.push('/boarding')
+	}, 2000)
+})
 
 </script>
 

@@ -19,7 +19,7 @@ watch(() => passwordData.value,
 </script>
 
 <template>
-	<div class="flex flex-col gap-3">
+	<div class="flex flex-col gap-3 ">
 		<h1 class="text-base font-medium font-roboto">Kata Sandi Baru</h1>
 		<p class="text-sm font-normal font-roboto text-text-grey-1 pb-2">
 			Buat kata sandi baru yang kuat untuk akun dengan email

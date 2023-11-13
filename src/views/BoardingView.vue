@@ -7,15 +7,16 @@ const boardingRef = ref(boarding);
 
 <template>
 	<main class="min-h-screen flex flex-col text-center items-center">
-		<img :src="boardingRef" alt="boarding" width="300" class="h-auto max-w-full" />
-		<h1 class="text-[18px] font-bold text-text-black-1">Apps Kurir</h1>
-		<h2 class="text-text-grey-1 font-normal text-xs w-1/2">
+		<img :src="boardingRef" alt="boarding"  class="h-auto min-w-fit mt-20" />
+		<h1 class="text-lg font-poppins font-bold text-text-black-1">Apps Kurir</h1>
+		<h2 class="text-text-grey-1 font-normal font-poppins text-xs w-2/3 ">
 			Siapkan strategi khusus untuk mengatasi keluhan pelanggan.
 		</h2>
-		<RouterLink class="fixed bottom-6 w-2/3" :to="'/login'">
-			<button class="bg-red-button-1 py-3 w-full text-white rounded-xl">
-				Mulai Sekarang
-			</button>
+		<RouterLink
+			to="/login"
+			class="bg-red-button-1 text-center w-3/4 mt-16 max-w-lg pt-4 py-3 text-white rounded-xl font-google-sans font-medium"
+		>
+			Mulai Sekarang
 		</RouterLink>
 	</main>
 </template>

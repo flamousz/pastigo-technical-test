@@ -17,9 +17,9 @@ const handleChecked = () => {
 </script>
 
 <template>
-	<main class="flex flex-col items-center max-w-lg">
+	<main class="flex flex-col items-center ">
 		<div
-			class="bg-[url('../assets/header-dashboard.png')] px-3 flex flex-col gap-4 items-center bg-contain min-w-full min-h-[calc(100vh-55px)] bg-no-repeat "
+			class="bg-[url('../assets/header-dashboard.png')] px-4 flex flex-col gap-4 items-center bg-contain min-w-full min-h-[calc(100vh-55px)] bg-no-repeat "
 		>
 			<div class="text-center pt-12">
 				<h3 class="font-google-sans text-xs font-normal text-white">
@@ -37,7 +37,7 @@ const handleChecked = () => {
 						<img
 							:src="photoProfileHomepage"
 							alt="photo profile"
-							class="h-auto min-w-fit"
+							class="h-auto max-w-fit"
 						/>
 					</div>
 					<div>
