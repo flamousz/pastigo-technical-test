@@ -7,11 +7,16 @@ import ForgotPasswordView from "../views/ForgotPasswordView.vue";
 import NewPasswordView from "../views/NewPasswordView.vue";
 import NewPasswordFormView from "../views/NewPasswordFormView.vue";
 import NewPasswordSuccessVue from "../views/NewPasswordSuccessVue.vue";
-import UserView from '../views/UserView.vue'
-import AccountView from '../views/AccountView.vue'
-import NearbyView from '../views/NearbyView.vue'
-import CourierView from '../views/CourierView.vue'
-import NotificationView from '../views/NotificationView.vue'
+import UserView from "../views/UserView.vue";
+import AccountView from "../views/AccountView.vue";
+import NearbyView from "../views/NearbyView.vue";
+import CourierView from "../views/CourierView.vue";
+import NotificationView from "../views/NotificationView.vue";
+import PickupView from "../views/PickupView.vue";
+import PendingView from "../views/PendingView.vue";
+import ProgressView from "../views/ProgressView.vue";
+import SuccessView from "../views/SuccessView.vue";
+import TroubleView from "../views/TroubleView.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,34 +32,61 @@ const router = createRouter({
 			component: BoardingView,
 		},
 		{
-			path: '/user',
-			name: 'user',
+			path: "/user",
+			name: "user",
 			component: UserView,
 			children: [
 				{
-					path: 'dashboard',
-					name: 'dashboard',
-					component: HomePageView
+					path: "dashboard",
+					name: "dashboard",
+					component: HomePageView,
 				},
 				{
-					path: 'account',
-					name: 'account',
-					component: AccountView
+					path: "account",
+					name: "account",
+					component: AccountView,
 				},
 				{
-					path: 'nearby',
-					name: 'nearby',
-					component: NearbyView
+					path: "nearby",
+					name: "nearby",
+					component: NearbyView,
 				},
 				{
-					path: 'courier',
-					name: 'courier',
-					component: CourierView
+					path: "courier",
+					name: "courier",
+					component: CourierView,
 				},
 				{
-					path: 'notification',
-					name: 'notification',
-					component: NotificationView
+					path: "notification",
+					name: "notification",
+					component: NotificationView,
+				},
+			],
+		},
+		{
+			path: "/pickup",
+			name: "pickup",
+			component: PickupView,
+			children: [
+				{
+					path: 'pending',
+					name: 'pending',
+					component: PendingView
+				},
+				{
+					path: 'success',
+					name: 'successpickup',
+					component: SuccessView
+				},
+				{
+					path: 'progress',
+					name: 'progresspickup',
+					component: ProgressView
+				},
+				{
+					path: 'trouble',
+					name: 'troublepickup',
+					component: TroubleView
 				}
 			]
 		},

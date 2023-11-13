@@ -157,9 +157,11 @@ const handleChecked = () => {
 			<div class="min-w-full mt-2 flex flex-col gap-2 mb-3">
 				<div class="flex flex-row justify-between">
 					<h1 class="font-poppins font-md text-sm">Pending</h1>
-					<h1 class="font-poppins font-md text-sm text-red-button-1">
-						Lihat Semua
-					</h1>
+					<RouterLink to="/pickup/pending">
+						<h1 class="font-poppins font-md text-sm text-red-button-1">
+							Lihat Semua
+						</h1>
+					</RouterLink>
 				</div>
 				<div
 					class="flex flex-col p-4 shadow-[0_3px_10px_rgb(0,0,0,0.1)] bg-white rounded-xl"
@@ -181,7 +183,7 @@ const handleChecked = () => {
 							</div>
 						</div>
 						<h1
-							class="bg-bg-status-pending h-fit px-2 font-poppins font-normal text-[10px] text-text-status-pending rounded-md"
+							class="bg-bg-status-pending h-fit px-2 py-1 font-poppins font-normal text-[10px] text-text-status-pending rounded-md"
 						>
 							Pending
 						</h1>
